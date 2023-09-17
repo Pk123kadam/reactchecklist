@@ -1,13 +1,15 @@
 .tasks{
 width: 300px;
 height: 300px;
+padding: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
-border: 1px solid;
+box-shadow: 0 0 5px rgb(77, 74, 74);
 color: black !important;
 text-decoration: none;
 transition: all 0.5s;
+font-size: 20px;
 &:hover{
    background-color: rgba(0, 0, 0, 0.705);
    color: white !important;

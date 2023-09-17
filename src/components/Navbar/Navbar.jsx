@@ -14,7 +14,8 @@ function Navbar() {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <Link to="/task1"> <button className='btn text-white'>Task1</button></Link>
+                                <Link to="/task1" className={styles.link}> <button className='btn text-white'>Task1</button></Link>
+                                <Link to="/task2" className={styles.link}> <button className='btn text-white'>Task2</button></Link>
                             </li>
                             {/* <li class="nav-item">
                                 <Link to="/task2"> <button className='btn'>Task2</button></Link>

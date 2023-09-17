@@ -11,7 +11,7 @@ function Home(props) {
         <>
             <div className='d-flex flex-wrap justify-content-center gap-3 mt-3'>
                 <Link to='/task1' className={styles.tasks}><div >StopWatch</div></Link>
-                <Link to='/task1' className={styles.tasks}><div >StopWatch</div></Link>
+                <Link to='/task2' className={styles.tasks}><div >Redux Tool Kit (crud operation)</div></Link>
                 <Link to='/task1' className={styles.tasks}><div >StopWatch</div></Link>
                 <Link to='/task1' className={styles.tasks}><div >StopWatch</div></Link>
 
