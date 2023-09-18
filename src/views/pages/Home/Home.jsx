@@ -3,10 +3,6 @@ import styles from "./Home.module.css"
 import { Link } from 'react-router-dom'
 
 function Home(props) {
-
-
-
-
     return (
         <>
             <div className='d-flex flex-wrap justify-content-center gap-3 mt-3'>

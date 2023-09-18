@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from "./Navbar.module.css"
+import { useDispatch } from "react-redux"
+import { filtered } from '../../views/pages/Task2/FormReducer'
 
 function Navbar() {
+    const dispatch = useDispatch()
+    const [name, setName] = useState("")
+    function handlechange(e) {
+        setName(e.target.value)
+
+    }
+    function handlesubmit(e) {
+        e.preventDefault()
+        console.log('submit')
+        dispatch(filtered(name))
+    }
+    console.log('name', name)
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -22,8 +36,8 @@ function Navbar() {
                             </li> */}
 
                         </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <form class="d-flex" onSubmit={handlesubmit}>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={(e) => handlechange(e)} />
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
